@@ -9,12 +9,12 @@
     <meta name="generator" content="Jekyll v4.1.1">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
 
-    <title>{% block title %}Bienvenue|Les vins de bourgogne{%
-            endblock %}</title>
+    <title>{% block title %}Bienvenue|Les vins de bourgogne{% endblock %}</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('assets/css/lesvinsdebourgogne.css') }}">
+    <!-- Our custom CSS -->
+    <link rel="stylesheet" href="{{ asset('css/lesvinsdebourgogne.css') }}">
 
 
     <style>
@@ -50,19 +50,32 @@
                     <a class="nav-link" href="{{path ('app_products')}}">Nos produits</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="{{path('app_products')}}">Qui sommes-nous.</a>
+                    <a class="nav-link" href="{{path('app_products')}}">Qui sommes-nous</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="{{path('app_products')}}">contact</a>
+                    <a class="nav-link" href="{{path('app_products')}}">Contact</a>
                 </li>
 
             </ul>
             {% if app.user %}
-            <a href="{{ path ('app_account') }}">Mon compte</a> | <a
-                    href="{{ path ('app_logout') }}">Déconnexion</a>
+                <ul class="navbar-nav d-flex flex-row-reverse">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{path('app_account')}}">Mon compte</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{path('app_logout')}}">Déconnexion</a>
+                    </li>
+                </ul>
             {% else %}
-            <a href="{{ path ('app_login') }}">Connexion</a> | <a
-                    href="{{ path('app_register') }}">Inscription</a>
+                <ul class="navbar-nav d-flex flex-row-reverse">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{path('app_login')}}">Connexion</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{path('app_register')}}">Inscription</a>
+                    </li>
+                </ul>
+
             {% endif %}
         </div>
     </nav>
@@ -136,14 +149,27 @@
     </div><!-- /.container -->
 
     <!-- FOOTER -->
-    <footer class="container">
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2022 Justine Strescher &middot; <a
-                    href="#">Privacy</a>
-            &middot; <a href="#">Terms</a></p>
+    <footer class="footer-custom">
+        <p>&copy; 2022 Les vins de Bourgogne<br/>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a></p>
     </footer>
 </main>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="{{ asset('assets/js/bootstrap.bundle.js') }}"></script>
+<script type="text/javascript">
+
+    function placeFooter() {
+        if( $(document.body).height() < $(window).height() ) {
+            $("footer").css({position: "fixed", bottom:"0px"});
+        } else {
+            $("footer").css({position: ""});
+        }
+    }
+
+    placeFooter();
+
+</script>
+
 </body>
 </html>
