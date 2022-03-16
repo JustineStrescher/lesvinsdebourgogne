@@ -13,11 +13,12 @@ Ce projet est réalisé sous environnement Windows
 
 ### Pré-requis
 
-Ce qu'il est requis pour commencer avec votre projet...
+Ce qui est requis pour commencer avec votre projet...
 
 - XAMPP avec PHP 8, Apache et MySQL
 - Composer
 - CLI Symfony
+- Easy Admin Bundle
 
 ### Installation
 
@@ -25,7 +26,7 @@ Les étapes pour installer votre programme....
 
  Executez la commande ``Symfony new lesvinsdebourgogne --webapp`` 
  
- Ne voulant pas utiliser webpack encore installer d'office avec 
+ Ne voulant pas utiliser webpack encore installé d'office avec 
  Symfony 6, j'ai retiré "symfony/webpack-encore-bundle": "^1.12" 
  dans le fichier composer.json.
  Puis j'ai supprimé mon dossier asset désormais vide.
@@ -35,7 +36,7 @@ Les étapes pour installer votre programme....
 
 ## Démarrage
 
-Executez la commande ``Symfony serve``
+Exécutez la commande ``Symfony serve``
 
 ## Fabriqué avec
 <code><img height="40" src="public/assets/images/Phpstorm.png"></code>
