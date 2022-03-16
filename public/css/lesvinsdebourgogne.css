@@ -1,0 +1,12 @@
+.footer-custom {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #343A40;
+    padding-bottom: 25px;
+}
+.footer-custom p {
+    color: #FFFFFF;
+
+}
