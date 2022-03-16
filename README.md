@@ -5,7 +5,8 @@
 ![forthebadge](public/assets/images/e-commerce.svg)
 
 
-Afin de découvrir PHP6 et mettre en application mon apprentissage chez O'clo
+Afin de découvrir PHP6 et mettre en application mon apprentissage 
+chez O'clock
 j'ai créé ce projet.
 Ce projet est réalisé sous environnement Windows
 
