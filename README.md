@@ -18,6 +18,7 @@ Ce qui est requis pour commencer avec votre projet...
 - XAMPP avec PHP 8, Apache et MySQL
 - Composer
 - CLI Symfony
+- Easy Admin Bundle
 
 ### Installation
 
