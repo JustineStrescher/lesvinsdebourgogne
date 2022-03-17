@@ -49,6 +49,12 @@ product-item h5 {
 }
 
 .product-item img{
-    width : 400px;
-    height : 400px;
+
+}
+.product-one img{
+    width : 500px;
+    height : 500px;
+}
+.product-page-price{
+    font-size: 18px ;
 }
