@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nos produits : Les vins de Bourgogne{% endblock %}
+
+{% block content %}
+<h1>Nos produits</h1>
+    <div class="row">
+    {% for product in products %}
+{#{{ dump (product) }}#}
+        <div class="col-md-4">
+            <div class="product-item text-center">
+                <a href="{{ path('app_product',{'slug' : product.slug}) }}"><img  src="/uploads/{{ product.illustration }}" alt="{{ product.name }}" class="img-thumbnail" ></a>
+
+                <h5>{{ product.name }}</h5>
+                <span class="product-subtitle">{{ product.subtitle }}</span>
+                <span class="product-price">{{ (product.price/ 100)|number_format(2, ',', '.') }} € </span>
+
+
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}

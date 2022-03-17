@@ -1,3 +1,65 @@
+<<<<<<< easyadmin
+body {
+    position: relative;
+}
+
+.navbar-item-custom, .navbar-item-custom a {
+    color: #343A40;
+}
+
+.footer-custom {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    background-color: #343A40;
+    padding-top: 25px;
+    margin-top: 50px;
+}
+.footer-custom p{
+    color: #FFFFFF;
+}
+
+product-item h5 {
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 1px;
+}
+
+.product-item {
+    margin-top: 50px;
+}
+
+.product-item .product-subtitle {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.product-item .product-price {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.product-container {
+    margin-bottom: 150px;
+}
+
+.product-page-price {
+    font-width: bold;
+    font-size: 19px;
+}
+
+.product-item img{
+
+}
+.product-one img{
+    width : 500px;
+    height : 500px;
+}
+.product-page-price{
+    font-size: 18px ;
+}
+=======
 .footer-custom {
     text-align: center;
     position: fixed;
@@ -10,3 +72,4 @@
     color: #FFFFFF;
 
 }
+>>>>>>> main
