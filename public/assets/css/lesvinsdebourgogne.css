@@ -1,0 +1,9 @@
+.footer-custom {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+body{
+    background-color: #0b2e13;!important;
+}
